@@ -1,0 +1,19 @@
+* Tales Of The Code
+Tales of The Code is a text based game that was semi-inspired by the BBS Door Game
+Legend Of the Red Dragon (LORD).
+
+The Game will be more centered around the user typing in words rather than pressing letters.
+Furthermore, I have been planning to add in some unique elements, for example:
+	     - Teaching people programming
+	     - Having a text editor
+	     - Boss fights will be about solving bugs
+And the list could go on and on.
+
+** Installing
+Tales Of The Code is not meant for installing at this point in time, but if you wish to do so:
+#+BEGIN_SRC sh
+  # Compile
+  make
+  # And to Run:
+  ./TOTC
+#+END_SRC
