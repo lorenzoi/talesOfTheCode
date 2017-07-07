@@ -4,13 +4,15 @@
 using namespace std;
 using namespace Characters;
 
-char* Player::UserInput()
+void Player::UserInput()
 {
-  char* uInput;
+  char uInput[999];
   getstr(uInput);
-  if (uInput == "a")
+  if (uInput[0] == 'a')
     {
-      printw(uInput);
+      printw("WORKS!\n");
+      //getch();
+      refresh();
     }
-  return uInput;
+  //return uInput;
 }

@@ -23,7 +23,7 @@ namespace Characters
     Player(const char* n, int h, int x, int m, int s, int l, int xnl, int c)\
       : Character(n,h,x,m,s,l,xnl,c) {}
 
-    char* UserInput();
+    void UserInput();
     
   };
 };
