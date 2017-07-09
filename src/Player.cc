@@ -1,5 +1,6 @@
 #include "Characters.hh"
 #include <ncurses.h>
+#include <iterator>
 
 using namespace std;
 using namespace Characters;
@@ -12,6 +13,11 @@ void Player::UserInput()
     {
       printw("WORKS!\n");
       //getch();
+      refresh();
+    }
+  else
+    {
+      printw("Unknown Command!\n");
       refresh();
     }
   //return uInput;

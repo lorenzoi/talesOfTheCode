@@ -13,19 +13,17 @@ int main()
   initscr();
   cbreak();
   noecho();
-  char a = getch();
+  //char a = getch();
   int i;
   while(1)
     {
-      if (a == 'i')
-	{
-	  echo();
-	  printw("> ");
-	  test.UserInput();
-	  //move(1, 1);
-	  noecho();
-	  refresh();
-	}
+      echo();
+      printw("> ");
+      test.UserInput();
+      getch();
+      clear();
+      noecho();
+      refresh();
     }
   refresh();
   getch();
