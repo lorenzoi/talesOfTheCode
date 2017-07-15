@@ -1,17 +1,17 @@
 #include "Characters.hh"
+#include "Rooms.hh"
 #include <ncurses.h>
 #include <iterator>
 
 using namespace std;
-using namespace Characters;
 
-void Player::UserInput()
+void Player::UserInput(Room room)
 {
   char uInput[999];
   getstr(uInput);
   if (uInput[0] == 'a')
     {
-      printw("WORKS!\n");
+      printw(room.name);
       //getch();
       refresh();
     }

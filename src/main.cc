@@ -1,14 +1,16 @@
 #include "Characters.hh"
+#include "Rooms.hh"
 #include <iostream>
 #include <ncurses.h>
 #include <string>
 
 using namespace std;
-using namespace Characters;
 
 int main()
 {
   Player test ("Bob", 20, 0, 20, 20, 1, 100, 0);
+
+  Room room1 ("Test Room", "A Dull Room");
   
   initscr();
   cbreak();
@@ -19,7 +21,7 @@ int main()
     {
       echo();
       printw("> ");
-      test.UserInput();
+      test.UserInput(room1);
       getch();
       clear();
       noecho();
